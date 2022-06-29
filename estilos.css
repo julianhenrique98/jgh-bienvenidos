@@ -7,7 +7,7 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     background-color: rgb(14, 37, 52);
     transition: .5s;
 }
@@ -16,7 +16,7 @@ html{
 /*INICIO*/
 
 #inicio{
-    background: linear-gradient(rgba(227, 118, 97, 0.0), rgba(0 ,0 ,0 ,.7)), url('../henrique-julian-tp2/img/fondo.jpg');
+    background: linear-gradient(rgba(227, 118, 97, 0.0), rgba(0 ,0 ,0 ,.7)), url('../henrique-julian-tp2/img/fondo.png');
     background-size:cover;
     background-position:center;
     height:100vh;
@@ -297,7 +297,6 @@ html{
 
 #portfolio .fila .proyecto{
     max-width: 450px;
-    border: 1px solid rgb(255, 255, 255);
     margin: 0 10px;
     position: relative;
     overflow: hidden;
@@ -308,7 +307,8 @@ html{
     height: 100%;
     filter: grayscale(1);
     object-fit: cover;
-    transition: .12s;
+    transition: 1.5s;
+    border-radius: 10px;
 }
 
 /*FX PORT*/
@@ -326,6 +326,7 @@ html{
     opacity: 0;
     bottom: -40px;
     transition: .5s;
+    border-radius: 3px;
 }
 
 #portfolio .fila .proyecto:hover .info{
@@ -355,6 +356,7 @@ html{
     margin: 20px 0px;
     text-align: center;
     justify-content: center;
+    
 
 }
 #inspiracion{
@@ -363,9 +365,8 @@ html{
 
 #inspiracion .descripcion-img img{
     width: 440px;
-    padding-bottom: 30px;
-    filter: grayscale(1);
-    transition: .5s;
+    padding-bottom: 60px;
+    border-radius: 5px;
 }
 
 /*FX SK*/
@@ -376,63 +377,6 @@ html{
 /*SAM*/
 .sam{
     text-align: center;
-}
-
-/* CONTACTO */
-
-#contacto .titulo-seccion{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #0b0b20;
-    text-decoration: underline;
-    text-decoration: #d3d3d3;
-    text-align: center;
-}
-
-#contacto .contenedor-formulario{
-    max-width: 1100px;
-    margin: auto;
-}
-
-#contacto .contenedor-formulario .fila{
-    margin-bottom: 25px;
-}
-
-#contacto .contenedor-formulario .mitad{
-    display: flex;
-    justify-content: space-between;
-}
-
-#contacto .contenedor-formulario input,
-#contacto .contenedor-formulario textarea{
-    padding: 20px;
-    border-radius: 20px;
-    border:none;
-    border: 1px solid #919191;
-}
-
-#contacto .contenedor-formulario .mitad input{
-    width: 50%;
-}
-
-#contacto .contenedor-formulario .input-full{
-    width: 100%;
-}
-
-#contacto .btn-enviar{
-    display: block;
-    transition: .5s;
-    padding: 20px 15px;
-    font-weight: bold;
-    margin: 13px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-#contacto .btn-enviar:hover{
-    background-color: rgb(44, 103, 116);
 }
 
 /* FOOTER */
