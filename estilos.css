@@ -1,0 +1,474 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    background-color: rgb(14, 37, 52);
+    transition: .5s;
+}
+
+
+/*INICIO*/
+
+#inicio{
+    background: linear-gradient(rgba(227, 118, 97, 0.0), rgba(0 ,0 ,0 ,.7)), url('../henrique-julian-tp2/img/fondo.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+
+/*BARRA NAVEGACIÓN*/
+
+#inicio .contenedor header{
+    background-color: rgb(7, 16, 23);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    top: 0%;
+}
+
+#inicio .contenedor header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+}
+/*TXT OCULTO EN LOGO*/
+#inicio .contenedor .contenido-header #logo{
+    font-size: 0;
+    padding-right:-200px;
+}
+
+#inicio .contenedor header .contenido-header img{
+    padding: 0px 10px;
+}
+
+#inicio .contenedor header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+#inicio .contenedor header .contenido-header nav ul a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenedor header .contenido-header nav ul a:hover{
+    color: rgb(248, 156, 113);
+
+}
+
+/*PRESENTACION*/
+
+#inicio .presentacion .bienvenida{
+    font-size: 16px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+#inicio .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/*JGH*/
+
+#inicio .contenedor .presentacion h2 span{
+    color: rgb(248, 156, 113);
+
+} 
+
+#inicio .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#inicio .contenedor .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+
+}
+/*BOTÓN*/
+#inicio .contenedor .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#inicio .contenedor .presentacion a:hover{
+    background-color:rgb(248, 156, 113);
+    transition: 0.5s;
+}
+
+/*NUESTROS PERFILES*/
+
+#nosotros{
+    max-width: 1100px;
+    margin: auto;
+    padding: 115px 15px;
+    font-weight: 250;
+    color: rgb(255, 255, 255);
+
+}
+
+#nosotros .nos-fotos img{
+    margin-left: 203px; 
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 20%;
+    height: 10%;
+    border-radius: 200px;
+    display: inline;
+
+}
+
+#nosotros .nosotros{
+    margin: 0 40px;
+}
+
+#nosotros .nosotros h2{
+    font-size: 34px;
+    text-align: center;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#nosotros .descripcion-fotos{
+    text-align: center;
+    margin: 20px;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+#nosotros .descripcion-fotos h3{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: rgb(248, 156, 113);
+    display: inline-flex;
+    padding: 0px 150px;
+}
+
+#nosotros .descripcion-fotos p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    display: inline-flex;
+}
+
+/*BIOGRAFÍAS*/
+
+#nosotros .descripcion-fotos .bio{
+    padding-left: 80px;
+    padding-right: 50px;
+} 
+
+#nosotros .descripcion-fotos .biof{
+    padding-left: 5px;
+}   
+
+/* SERVICIOS */
+
+#servicios{
+   
+    padding: 112px 15px;
+    text-align: center;
+    background-color: rgb(18, 54, 81);
+
+}
+
+#servicios .titulo-seccion{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+
+}
+
+#servicios .fila .servicio{
+    max-width: 350px;
+    background-color: rgb(247, 222, 217);
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#servicios .fila .servicio:hover{
+    box-shadow: 5px 5px 10px #545454, -5px -5px 10px #8a8a8a;
+}
+
+#servicios .fila .servicio h4{
+    font-size: 22px;
+    margin-bottom: 25px;
+
+}
+
+#servicios .fila .servicio .icono{
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 15px;
+        
+}
+
+#servicios .fila .servicio .icono img{
+    border-radius: 10px;
+}
+
+#servicios .fila .servicio hr{
+    width: 30%;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+
+}
+
+#servicios .fila .servicio ul{
+ 
+    margin-bottom: 10px;
+}
+
+#servicios .fila .servicio p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* TRABAJOS */
+
+#portfolio{
+    max-width: 1040px;
+    padding: 110px 0;
+    margin: auto;
+    
+    
+}
+
+#portfolio .titulo-seccion{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#portfolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyecto{
+    max-width: 450px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .12s;
+}
+
+/*FX PORT*/
+#portfolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info{
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 64, 16);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+/* INSPIRACIÓN */
+
+#inspiracion{
+    max-width: 1100px;
+    padding: 90px 0;
+    margin: auto;
+}
+
+#inspiracion .titulo-seccion{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#inspiracion .descripcion-img{
+    display: inline-block;
+    margin: 20px 0px;
+    text-align: center;
+    justify-content: center;
+
+}
+#inspiracion{
+    color: white;
+}
+
+#inspiracion .descripcion-img img{
+    width: 440px;
+    padding-bottom: 30px;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+/*FX SK*/
+#inspiracion .descripcion-img:hover img{
+    filter: grayscale(0);
+}
+
+/*SAM*/
+.sam{
+    text-align: center;
+}
+
+/* CONTACTO */
+
+#contacto .titulo-seccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #0b0b20;
+    text-decoration: underline;
+    text-decoration: #d3d3d3;
+    text-align: center;
+}
+
+#contacto .contenedor-formulario{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-formulario .fila{
+    margin-bottom: 25px;
+}
+
+#contacto .contenedor-formulario .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-formulario input,
+#contacto .contenedor-formulario textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border:none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-formulario .mitad input{
+    width: 50%;
+}
+
+#contacto .contenedor-formulario .input-full{
+    width: 100%;
+}
+
+#contacto .btn-enviar{
+    display: block;
+    transition: .5s;
+    padding: 20px 15px;
+    font-weight: bold;
+    margin: 13px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#contacto .btn-enviar:hover{
+    background-color: rgb(44, 103, 116);
+}
+
+/* FOOTER */
+.redes {
+    display: inline-block;
+    margin-left: 75px;
+    margin-right: 1px;
+    text-align: center;
+}
+
+
+#mainfooter{
+    padding: 18px 10px;
+    text-align:center;
+    color: #fff;
+}
+
+#mainfooter p{
+    font-size: 14px;
+    padding-left: 85px;
+    padding-top: 20px;
+
+}
+
+#mainfooter .social-contacto a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#mainfooter a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
